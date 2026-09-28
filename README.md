@@ -20,7 +20,7 @@ A small private notes application with email/password authentication and owner-o
 
 ## Run locally
 
-Requirements: Node.js 22 or newer and PostgreSQL 14 or newer.
+Requirements: Node.js 20.9 or newer and PostgreSQL 14 or newer.
 
 ```bash
 git clone https://github.com/basecaseworks/notes.git
