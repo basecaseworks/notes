@@ -33,6 +33,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run db:migrate
+      - run: npm run db:seed
+      - run: npm run db:check
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run test

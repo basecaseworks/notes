@@ -28,6 +28,8 @@ cd notes
 npm install
 cp .env.example .env.local
 npm run db:migrate
+npm run db:seed
+npm run db:check
 npm run dev
 ```
 
@@ -60,6 +62,8 @@ npm run db:generate
 ```
 
 The database is not tied to a provider-specific API, so changing PostgreSQL hosts only requires changing `DATABASE_URL`.
+
+`npm run db:check` uses the configured runtime connection to verify that the Better Auth tables (`user`, `session`, `account`, and `verification`) and `notes` exist and that the runtime role has the required table privileges. It never prints credentials.
 
 ## API
 
